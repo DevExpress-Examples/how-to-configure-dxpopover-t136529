@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Framework styles-->
+    <link rel="stylesheet" type="text/css" href="css/dx.common.css" />
+    <link rel="stylesheet" type="text/css" href="css/dx.spa.css" />
+    <link rel="dx-theme" data-theme="generic.light" href="css/dx.light.css" data-active="true" />
+    <link rel="dx-theme" data-theme="ios.default" href="css/dx.ios.default.css" data-active="true" />
+    <link rel="dx-theme" data-theme="ios7.default" href="css/dx.ios7.default.css" data-active="true" />
+    <link rel="dx-theme" data-theme="android.holo-dark" href="css/dx.android.holo-dark.css" data-active="true" />
+    <link rel="dx-theme" data-theme="win8.white" href="css/dx.win8.white.css" data-active="true" />
+
+    <title>How to create the dxPopover widget</title>
+
+    <!--Framework scripts-->
+    <script type="text/javascript" src="lib/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="lib/knockout-3.0.0.js"></script>
+    <script type="text/javascript" src="lib/globalize.min.js"></script>
+
+    <script type="text/javascript" src="lib/dx.phonejs.js"></script>
+
+    <!-- JS code -->
+    <script type="text/javascript" src="Popover.js"></script>
+
+</head>
+<body>
+
+    <div class="dx-viewport"></div>
+
+    <div data-options="dxView : { name: 'home' } ">
+        <div data-bind="dxButton: { clickAction: togglePopover, text: 'Show' }" class="popover-button"></div>
+        <div data-bind="dxPopover: { width: 200, height: 'auto', visible: visible, target: '.popover-button' }">
+            <div data-bind="dxList: { items: colors, itemClickAction: function() { visible(false); } }"></div>
+        </div>
+    </div>
+
+</body>
+</html>
