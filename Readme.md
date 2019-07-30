@@ -4,7 +4,7 @@
 <!-- default file list end -->
 # How to configure dxPopover 
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t136529)**
+**[[Run Online]](https://codecentral.devexpress.com/t136529/)**
 <!-- run online end -->
 
 
